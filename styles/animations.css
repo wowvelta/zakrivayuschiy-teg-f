@@ -12,3 +12,12 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes flag-animation {
+  from {
+    inset-inline-start: -15px;
+  }
+  to {
+    inset-inline-start: -11px;
+  }
+}

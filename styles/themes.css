@@ -8,6 +8,8 @@
 :root.theme-dark {
   --background-color: #000;
   --accent-color: #00cc14;
+  --button-paint-color:  #00cc14;
+  --button-text-color:  #00cc14;
   --main-font-weight: 465;
   --title-font-weight: 785;
   --gradient: repeating-linear-gradient(90deg, #000 0 2px,  transparent 2px 4px),
@@ -19,6 +21,8 @@
   :root {
     --background-color: #000;
     --accent-color: #00cc14;
+    --button-paint-color:  #00cc14;
+    --button-text-color:  #00cc14;
     --main-font-weight: 465;
     --title-font-weight: 785;
     --gradient: repeating-linear-gradient(90deg, #000 0 2px,  transparent 2px 4px),
@@ -30,6 +34,8 @@
 :root.theme-light {
   --background-color: #fff;
   --accent-color: #000;
+  --button-paint-color: black;
+  --button-text-color: #fff;
   --main-font-weight: 400;
   --title-font-weight: 700;
   --gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px,  transparent 2px 4px),
@@ -41,6 +47,8 @@
   :root {
     --background-color: #fff;
     --accent-color: #000;
+    --button-paint-color: black;
+    --button-text-color: #fff;
     --main-font-weight: 400;
     --title-font-weight: 700;
     --gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px,  transparent 2px 4px),
