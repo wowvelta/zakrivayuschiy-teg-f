@@ -25,7 +25,7 @@
   background-attachment: fixed;
   background-image: var(--gradient);
   font-variation-settings: "wght" var(--main-font-weight);
-  max-inline-size: 700px;
+  max-inline-size: 696px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@
 @media (width <= 375px) {
   .header {
     inline-size: 100vw;
-    margin-block-end: 104px;
+    margin-block-end: 100px;
   }
 
   .content {
@@ -57,7 +57,7 @@
 
   .card {
     inline-size: 100vw;
-  }
+  } 
 }
 
 .logo {
@@ -157,7 +157,7 @@
 .card__header {
   font-variation-settings: "wght" var(--title-font-weight);
   font-size: 18px;
-  padding: 3px 24px 3px 10px; 
+  padding: 3px 24px 8px 10px; 
   border-block-end: 2px solid var(--accent-color);
 }
 
@@ -171,15 +171,55 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
+  aspect-ratio: 1 / 1; 
 }
+
+.filter__brightness {
+  filter: brightness(80%);
+}
+
+.filter__hue-rotate {
+  filter: hue-rotate(2.1turn);
+}
+
+.filter__saturate {
+  filter: saturate(200%);
+}
+
+.filter__sepia {
+  filter: sepia(0.8);
+}
+
+.filter__contrast {
+  filter:  contrast(150%);
+}
+
+.filter__invert {
+  filter: invert(20%);
+}
+
+.filter__opacity {
+  filter: opacity(80%);
+}
+
+.filter__grayscale__blur {
+  filter: grayscale(60%) blur(2px);
+}
+
 
 .text {
   display: grid;
   gap: 27px; 
-  padding: 25px; 
+  padding: 27px 27px 25px 25px;
   font-weight: var(--main-font-weight);
   font-size: 18px; 
-  line-height: 116.667%; 
+  line-height: 116.667%;
+}
+
+@media (width <= 375px) {
+  .text {
+    padding-top: 17px; 
+  }
 }
 
 .card__label {
@@ -268,7 +308,7 @@
 .save__button {
   margin-top: 54px;
   inline-size: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
-  block-size: 51px; 
+  min-block-size: 51px; 
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -279,9 +319,9 @@
 
 @media (width <= 375px) {
   .save__button {
-    block-size: 80px; 
     flex-direction: column;
     margin: 54px 32px 102px 33px; 
+    min-block-size: 80px; 
   }
 
   .save__button__wrapper {
@@ -297,7 +337,6 @@
   width: 21px;
   height: 21px;
 }
-
 
 .save__button__wrapper {
   position: relative;
