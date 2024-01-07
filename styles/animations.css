@@ -35,7 +35,7 @@
 
 @keyframes sparks-animation {
   from {
-    fill: transparent; 
+    fill: transparent;
   }
 
   to {
@@ -44,7 +44,7 @@
 }
 
 .like-icon {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 /*step 1*/
@@ -56,7 +56,7 @@
 
 .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s linear 0.05s; 
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon .main-body {
@@ -129,9 +129,9 @@
 /* step 6 */
 
 .like-icon.is-liked .heart {
-  animation: heart-animation 0.3s ease-in alternate 1 0.1s; 
+  animation: heart-animation 0.3s ease-in alternate 1 0.1s;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-animation 0.3s ease-in alternate 1 0.3s; 
+  animation: sparks-animation 0.3s ease-in alternate 1 0.3s;
 }

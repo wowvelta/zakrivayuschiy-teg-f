@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   background-color: var(--background-color);
-  color: var(--accent-color); 
+  color: var(--accent-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -34,11 +34,11 @@
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   margin-bottom: 98px;
-  margin-top: 102px; 
+  margin-top: 102px;
   margin-inline: auto;
   padding-block-start: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
   padding-block-end: 25px;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
@@ -57,7 +57,7 @@
 
   .card {
     inline-size: 100vw;
-  } 
+  }
 }
 
 .logo {
@@ -78,7 +78,7 @@
   flex-direction: column;
   gap: 8px;
   font-size: 14px;
-  text-align:start;
+  text-align: start;
   align-self: center;
   margin-left: 12px;
 }
@@ -86,15 +86,15 @@
 .theme-menu__button {
   font-size: 14px;
   text-transform: uppercase;
-  border: none;  
+  border: none;
   position: relative;
   background: transparent;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: 0.3s ease; 
+  transition: 0.3s ease;
   cursor: pointer;
 }
 
@@ -113,7 +113,7 @@
 .theme-menu_button:focus {
   outline: none;
   opacity: 0.6;
-} 
+}
 
 .theme-menu_button:focus-visible {
   outline: none;
@@ -139,31 +139,31 @@
   position: absolute;
   opacity: 0.6;
   inset-inline-start: -15px;
-  animation: flag-animation 0.5s ease-in-out infinite alternate; 
+  animation: flag-animation 0.5s ease-in-out infinite alternate;
 }
 
 .card__list {
-  display: grid; 
+  display: grid;
   gap: 50px;
 }
 
 .card {
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
-  padding-block-end: 25px; 
+  padding-block-end: 25px;
   font-family: var(--main-font);
 }
 
 .card__header {
   font-variation-settings: "wght" var(--title-font-weight);
   font-size: 18px;
-  padding: 3px 24px 8px 10px; 
+  padding: 3px 24px 8px 10px;
   border-block-end: 2px solid var(--accent-color);
 }
 
 .image__wrapper {
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
 }
 
 .card__image {
@@ -171,7 +171,7 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
 }
 
 .filter__brightness {
@@ -191,7 +191,7 @@
 }
 
 .filter__contrast {
-  filter:  contrast(150%);
+  filter: contrast(150%);
 }
 
 .filter__invert {
@@ -206,36 +206,33 @@
   filter: grayscale(60%) blur(2px);
 }
 
-
 .text {
   display: grid;
-  gap: 27px; 
+  gap: 27px;
   padding: 27px 27px 25px 25px;
   font-weight: var(--main-font-weight);
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 116.667%;
 }
 
 @media (width <= 375px) {
   .text {
-    padding-top: 17px; 
+    padding-top: 17px;
   }
 }
 
 .card__label {
-  position: absolute; 
-  z-index: 2; 
+  position: absolute;
+  z-index: 2;
   top: clamp(1.438rem, 1.393rem + 0.188vw, 1.563rem);
   right: clamp(0.688rem, 0.379rem + 1.315vw, 1.563rem);
   text-transform: uppercase;
-  font-family: var( --accent-font);
-  font-size: 14px; 
+  font-family: var(--accent-font);
+  font-size: 14px;
   font-weight: var(--main-font-weight);
   color: var(--accent-color);
-  text-shadow: -1px 0 var(--background-color),
-  0 1px var(--background-color), 
-  1px 0 var(--background-color),
-  0 -1px var(--background-color); 
+  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
+    1px 0 var(--background-color), 0 -1px var(--background-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
 }
@@ -264,23 +261,23 @@
 }
 
 .card__like-button:focus {
-  outline: none; 
+  outline: none;
 }
 
 .card__like-button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--accent-color);
-  transition: 0.3s ease; 
+  transition: 0.3s ease;
 }
 
 .card__like-button:hover {
-  outline: none; 
+  outline: none;
   cursor: pointer;
 }
 
 .card__like-button::after {
   outline: none;
   content: "";
-  position: absolute; 
+  position: absolute;
   z-index: 1;
   background: var(--button-paint-color);
   margin-block-start: 0;
@@ -295,7 +292,7 @@
 
 .card__like-button:hover::after {
   transform: scaleX(1);
-  outline: none; 
+  outline: none;
 }
 
 .button__text {
@@ -308,10 +305,10 @@
 .save__button {
   margin-top: 54px;
   inline-size: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
-  min-block-size: 51px; 
+  min-block-size: 51px;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   text-align: center;
   margin: 54px 180px 105px 180px;
   flex-wrap: wrap;
@@ -320,8 +317,8 @@
 @media (width <= 375px) {
   .save__button {
     flex-direction: column;
-    margin: 54px 32px 102px 33px; 
-    min-block-size: 80px; 
+    margin: 54px 32px 102px 33px;
+    min-block-size: 80px;
   }
 
   .save__button__wrapper {
@@ -329,7 +326,7 @@
     flex-direction: column;
     gap: 8px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
   }
 }
 
@@ -346,14 +343,14 @@
 }
 
 .save__button:hover {
-  outline: none; 
+  outline: none;
   cursor: pointer;
 }
 
 .save__button::after {
   outline: none;
   content: "";
-  position: absolute; 
+  position: absolute;
   z-index: 1;
   background: var(--button-paint-color);
   margin-block-start: 0;
@@ -368,14 +365,14 @@
 
 .save__button:hover::after {
   transform: scaleX(1);
-  outline: none; 
+  outline: none;
   cursor: pointer;
 }
 
 .save__button:focus-visible {
-  outline: none; 
+  outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
-  transition: 0.3s ease; 
+  transition: 0.3s ease;
 }
 
 .card__icon-button {
@@ -383,7 +380,7 @@
   padding: 0;
   background-color: transparent;
   border: 2px solid transparent;
-  transition: border-color 0.3s ease; 
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -393,15 +390,16 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
-  transition: 0.3s ease; 
+  transition: 0.3s ease;
 }
 
 .card__icon-button:hover {
-  outline: none; 
+  outline: none;
   cursor: pointer;
 }
 
-@supports (text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color)) {
+@supports (text-stroke: 1px var(--background-color)) or
+  (-webkit-text-stroke: 1px var(--background-color)) {
   .card__label {
     -webkit-text-stroke: 1px var(--background-color);
     text-stroke: 1px var(--background-color);
@@ -416,7 +414,7 @@
 }
 
 .dialog__leadin {
-  display: flex; 
+  display: flex;
   margin-block-end: 30px;
   padding: 31px 32px 30px 31px;
   gap: 20px;
@@ -425,7 +423,7 @@
 
 .dialog__image {
   inline-size: 39px;
-  block-size: 39px; 
+  block-size: 39px;
   padding: 0;
   flex-shrink: 0;
 }
@@ -446,18 +444,18 @@
 }
 
 .dialog::backdrop {
-  background-color:rgb(0 0 0 / 0.75);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .dialog__button:hover {
-  outline: none; 
+  outline: none;
   cursor: pointer;
 }
 
 .dialog__button::after {
   outline: none;
   content: "";
-  position: absolute; 
+  position: absolute;
   z-index: 1;
   background: var(--button-paint-color);
   margin-block-start: 0;
@@ -472,16 +470,12 @@
 
 .dialog__button:hover::after {
   transform: scaleX(1);
-  outline: none; 
+  outline: none;
   cursor: pointer;
 }
 
 .dialog__button:focus-visible {
-  outline: none; 
+  outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
-  transition: 0.3s ease; 
+  transition: 0.3s ease;
 }
-
-
-
-
