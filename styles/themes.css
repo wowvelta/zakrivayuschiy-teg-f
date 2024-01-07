@@ -12,6 +12,9 @@
   --button-text-color:  #00cc14;
   --main-font-weight: 465;
   --title-font-weight: 785;
+  --contour-color: #00cc14;
+  --sparks-color: #ff0000;
+  --heart-color: #ff0000; 
   --gradient: repeating-linear-gradient(90deg, #000 0 2px,  transparent 2px 4px),
   repeating-linear-gradient(0deg, #000 0 2px,  transparent 2px 4px),
   linear-gradient(#007f0c 0%, #004306 100%);
@@ -25,6 +28,9 @@
     --button-text-color:  #00cc14;
     --main-font-weight: 465;
     --title-font-weight: 785;
+    --contour-color: #00cc14;
+    --sparks-color: #ff0000;
+    --heart-color: #ff0000; 
     --gradient: repeating-linear-gradient(90deg, #000 0 2px,  transparent 2px 4px),
     repeating-linear-gradient(0deg, #000 0 2px,  transparent 2px 4px),
     linear-gradient(#007f0c 0%, #004306 100%);
@@ -38,6 +44,9 @@
   --button-text-color: #fff;
   --main-font-weight: 400;
   --title-font-weight: 700;
+  --contour-color: #000; 
+  --sparks-color: #ff0000;
+  --heart-color: #ff0000; 
   --gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px,  transparent 2px 4px),
   repeating-linear-gradient(0deg, #d3d3d3 0 2px,  transparent 2px 4px),
   linear-gradient(#e7e7e7 0%, #e7e7e7 0.1%, #1a1a1a 100%);
@@ -51,6 +60,9 @@
     --button-text-color: #fff;
     --main-font-weight: 400;
     --title-font-weight: 700;
+    --contour-color: #000; 
+    --sparks-color: #ff0000;
+    --heart-color: #ff0000; 
     --gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px,  transparent 2px 4px),
     repeating-linear-gradient(0deg, #d3d3d3 0 2px,  transparent 2px 4px),
     linear-gradient(#e7e7e7 0%, #e7e7e7 0.1%, #1a1a1a 100%);
