@@ -30,7 +30,7 @@
 }
 
 .header {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   margin-bottom: 98px;
@@ -66,6 +66,7 @@
 
 .header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-family: var(--accent-font), sans-serif;
   display: block;
   margin-bottom: 15px;
   font-weight: 400;
@@ -78,6 +79,7 @@
   flex-direction: column;
   gap: 8px;
   font-size: 14px;
+  font-family: var(--accent-font), sans-serif;
   text-align: start;
   align-self: center;
   margin-left: 12px;
@@ -151,12 +153,13 @@
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   padding-block-end: 25px;
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
 }
 
 .card__header {
   font-variation-settings: "wght" var(--title-font-weight);
   font-size: 18px;
+  font-family: var(--main-font), sans-serif;
   padding: 3px 24px 8px 10px;
   border-block-end: 2px solid var(--accent-color);
 }
@@ -212,6 +215,7 @@
   padding: 27px 27px 25px 25px;
   font-weight: var(--main-font-weight);
   font-size: 18px;
+  font-family: var(--main-font), sans-serif;
   line-height: 116.667%;
 }
 
@@ -248,7 +252,7 @@
 .average__botton {
   position: relative;
   font-size: 14px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   line-height: 90%;
@@ -317,7 +321,7 @@
 @media (width <= 375px) {
   .save__button {
     flex-direction: column;
-    margin: 54px 32px 102px 33px;
+    margin: 54px auto 102px;
     min-block-size: 80px;
   }
 
@@ -333,6 +337,13 @@
 .save__button__floppy {
   width: 21px;
   height: 21px;
+}
+
+@media (width <= 375px) {
+  .save__button__floppy {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .save__button__wrapper {
@@ -426,11 +437,12 @@
   block-size: 39px;
   padding: 0;
   flex-shrink: 0;
+  color: var(--accent-color);
 }
 
 .dialog__text {
   font-size: 14px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), sans-serif;
   line-height: 150%;
   text-transform: uppercase;
   color: var(--accent-color);
