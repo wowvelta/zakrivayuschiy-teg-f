@@ -112,24 +112,24 @@
   block-size: 2px;
 }
 
-.theme-menu_button:focus {
+.theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
 }
 
-.theme-menu_button:focus-visible {
+.theme-menu__button:focus-visible {
   outline: none;
   opacity: 0.6;
 }
 
-.theme-menu_button:focus-visible::after {
+.theme-menu__button:focus-visible::after {
   opacity: 0.6;
   inline-size: 100%;
 }
 
 /*end of underline saga */
 
-.theme-menu__button:disabled {
+.theme-menu___button:disabled {
   position: relative;
   opacity: 0.6;
   pointer-events: none;
@@ -324,33 +324,24 @@
     margin: 54px auto 102px;
     min-block-size: 80px;
   }
-
-  .save__button__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .save__button__floppy {
   width: 21px;
   height: 21px;
+  margin-right: 8px;
+  position: relative;
+  z-index: 2;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 @media (width <= 375px) {
   .save__button__floppy {
     width: 28px;
     height: 28px;
+    margin-bottom: 8px;
   }
-}
-
-.save__button__wrapper {
-  position: relative;
-  z-index: 2;
-  color: var(--button-text-color);
-  mix-blend-mode: difference;
 }
 
 .save__button:hover {
