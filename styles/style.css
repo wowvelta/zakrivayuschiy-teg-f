@@ -314,7 +314,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 54px 180px 105px 180px;
+  margin: 54px auto 105px;
   flex-wrap: wrap;
 }
 
